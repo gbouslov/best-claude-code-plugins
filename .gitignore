@@ -1,0 +1,7 @@
+# Explicit public payload. Research and previews stay outside this repository.
+*
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!LICENSE
+!llms.txt
