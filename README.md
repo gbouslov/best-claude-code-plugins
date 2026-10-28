@@ -597,7 +597,7 @@ Repository metadata checked **2026-10-28 (UTC)**. Stars, latest default-branch c
 | Selected resource | Repository stars | Latest repository commit (UTC) | Archived |
 |---|---:|---|---|
 | [Feature Dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
-| [Superpowers](https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 307,316 | [2026-10-21](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | No |
+| [Superpowers](https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 307,321 | [2026-10-21](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | No |
 | [Planning with Files](https://github.com/OthmanAdi/planning-with-files) | 27,738 | [2026-10-28](https://github.com/OthmanAdi/planning-with-files/commit/5d29800bf8b919ca9a88ee7885b90050b5cb64ed) | No |
 | [Code Simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
 | [Agent SDK Dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/agent-sdk-dev) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
