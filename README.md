@@ -1,10 +1,10 @@
-# Best Claude Code Plugins: Choose by the Job
+# Best Claude Code Plugins (2026): Choose by the Job
 
-34 Claude Code plugins for building features, reviewing code, testing in a browser, connecting services and keeping context across sessions. Compare what each plugin installs, the setup it needs and its source repository's latest commit before adding it to your project.
+An awesome Claude Code plugins list and directory of 34 selected packages for building features, reviewing code, testing in a browser, connecting services and keeping context across sessions. Compare what each plugin installs, the setup it needs and its source repository's latest commit before adding it to your project.
 
 **Start with your next task.** For a new feature, choose Feature Dev; for current library documentation, Context7; for browser checks, Playwright. Add a service plugin when the task needs that service. You do not need the whole list.
 
-Source repositories and plugin manifests checked **28 October 2026**. The dates below are repository commits, including shared repositories; they are not dates of individual plugin releases. Installation commands and contents are checked against the current marketplace, including its pinned source versions. This is a source-reviewed selection, not an installation benchmark.
+Plugin manifests and installation routes reviewed **28 October 2026**. Each detailed entry's version and “Latest repository commit” line is a snapshot from that manual review, including shared repositories; these are not dates of individual plugin releases. For current stars, commit dates and archived status, use the [nightly activity table](#repository-activity). Installation commands and contents were checked against the marketplace, including its pinned source versions.
 
 ## Choose a plugin in one minute
 
@@ -25,9 +25,51 @@ On a phone, scroll the table sideways to see every column.
 | Search useful context from past sessions | [Claude-Mem](#claude-mem) | Session capture, a local worker and searchable persistent memory. |
 | See context and tool activity while working | [Claude HUD](#claude-hud) | Setup commands for a terminal status line. |
 
-Browse: [build](#build-plan-and-refine-code) · [review](#review-code-and-find-security-issues) · [docs and testing](#look-up-code-and-test-the-result) · [services](#connect-your-development-services) · [memory](#manage-context-and-session-memory) · [terminal and learning](#see-whats-happening-and-learn) · [customize Claude Code](#build-your-own-claude-code-setup).
+Browse: [by job](#best-claude-code-plugins-for-web-development) · [marketplaces](#official-and-community-marketplaces) · [install](#install-and-manage) · [build](#build-plan-and-refine-code) · [review](#review-code-and-find-security-issues) · [docs and testing](#look-up-code-and-test-the-result) · [services](#connect-your-development-services) · [memory](#manage-context-and-session-memory) · [terminal](#see-whats-happening-and-learn) · [customize](#build-your-own-claude-code-setup) · [FAQ](#frequently-asked-questions).
 
-## Install the plugin, with the scope you intend
+## Best Claude Code plugins for web development
+
+Start with [Feature Dev](#feature-dev) for a feature in an existing application, [Context7](#context7) for library APIs and [Playwright](#playwright) for the running browser journey. Add [Supabase](#supabase), [Firebase](#firebase), [Stripe](#stripe) or [Vercel](#vercel) when that service is part of the job.
+
+For a frontend change, the useful sequence is concrete: understand the component, check the relevant library API, implement it, and check the result in a browser. Add the plugin covering the step your current setup is missing.
+
+## Best Claude Code plugins for frontend design or website design
+
+Use [Figma](#figma) when you have a design file to implement: it connects Claude to design context and component mappings. Use [Playwright](#playwright) to inspect the implemented page and its interactions, then [Code Simplifier](#code-simplifier) for focused cleanup. Bring the actual design, content and acceptance criteria to the task.
+
+Figma access and browser testing solve different problems. Choose the design connection for source designs and the browser connection for the page people will use.
+
+## Best Claude Code plugins for mobile app development
+
+For app development, [Superpowers](#superpowers) supplies planning, debugging and verification workflows, while [Context7](#context7) helps with framework documentation. [Firebase](#firebase), [Supabase](#supabase) and [Sentry](#sentry) fit the backend and production-error parts of a mobile app when you already use those services.
+
+Use your platform's simulator, device and build tools to verify native behavior. Playwright fits web pages and mobile web journeys. For Expo, React Native, Flutter or iOS-specific workflows, the companion [Best Claude Code Skills](https://github.com/gbouslov/best-claude-code-skills) list is forthcoming and covers those specialist collections.
+
+## Best Claude Code plugins for developers
+
+Pick the missing development step: [Serena](#serena) for symbols and references, [Code Review](#code-review) for a GitHub pull request, [PR Review Toolkit](#pr-review-toolkit) for selected review concerns, and [Commit Commands](#commit-commands) for explicit Git commit and PR commands. [GitHub](#github), [GitLab](#gitlab), [Linear](#linear) and [Atlassian](#atlassian) connect the service where the work is tracked.
+
+For a developer building an agent application itself, [Agent SDK Dev](#agent-sdk-dev) targets Python and TypeScript SDK projects. The [overlap table](#compare-plugins-that-seem-to-overlap) helps avoid adding two packages for the same step.
+
+## Best Claude Code plugins to save tokens or reduce token usage
+
+Start by checking the cost of your current setup. Run `claude plugin details <name>` in a terminal for an installed plugin's footprint, and inspect `/context` inside Claude Code. Disable unused plugins before adding another context tool. [Official plugin overview](https://code.claude.com/docs/en/plugins/overview#what-an-enabled-plugin-adds-to-your-sessions).
+
+[Context Mode](#context-mode) indexes large tool outputs so selected results can return to the conversation. [Claude HUD](#claude-hud) makes usage visible; [Planning with Files](#planning-with-files) preserves an explicit plan. Compare them on the same task and include extra model calls and background processing in the cost. No percentage saving is assumed here.
+
+## Official and community marketplaces
+
+Anthropic's [official marketplace](https://github.com/anthropics/claude-plugins-official) is the install source for 30 entries here, including external publishers distributed through that catalog. An official listing identifies the distribution channel; upstream ownership and licenses still differ. Anthropic also maintains a [community marketplace](https://github.com/anthropics/claude-code), distinct from its official catalog. See [Anthropic's marketplace guide](https://code.claude.com/docs/en/plugins/anthropic-marketplaces).
+
+Four entries here use their own community marketplaces: [Planning with Files](https://github.com/OthmanAdi/planning-with-files), [Context Mode](https://github.com/mksglu/context-mode), [Claude-Mem](https://github.com/thedotmack/claude-mem) and [Claude HUD](https://github.com/jarrodwatts/claude-hud). Each entry includes the registration and installation commands. For broader discovery, [Awesome Claude Plugins](https://github.com/Chat2AnyLLM/awesome-claude-plugins) catalogs marketplaces; this page selects individual developer plugins.
+
+## Plugins and skills, compared
+
+A **skill** is reusable task guidance in a folder containing `SKILL.md`. A **plugin** is an installable package that can include skills, agents, hooks and MCP connections; an **MCP server** supplies tools or data access. Choose a skill for a focused workflow, a plugin for a packaged setup, and a server when you need a connection. [Official component overview](https://code.claude.com/docs/en/plugins/overview).
+
+For example, Supabase's plugin combines guidance with a live service connection; a skills-only installation can supply SQL guidance without that connection. The forthcoming [Best Claude Code Skills](https://github.com/gbouslov/best-claude-code-skills) companion covers document, web, mobile, security and research skills. A skill's portability does not automatically carry a plugin's hooks or server configuration to another agent.
+
+## Install and manage
 
 The fenced `sh` commands on this page run in your **terminal**. Commands beginning with `/`, such as `/reload-plugins`, run **inside Claude Code**.
 
@@ -40,6 +82,36 @@ claude plugin marketplace add anthropics/claude-plugins-official
 The install commands below use `--scope local`: enable the plugin for you in the current repository. Use `--scope user` for all your projects, or `--scope project` for a shared repository setup. Community entries include their own marketplace registration command. A marketplace's registered name can differ from its GitHub repository name.
 
 After installing, run `/reload-plugins` if Claude Code requests it, or start a new session. Check the Installed tab in `/plugin` and use `/mcp` for bundled server connection status. Some entries need a sign-in, runtime or one-time setup before their tools work. [Official installation and scope guide](https://code.claude.com/docs/en/discover-plugins).
+
+To list installed plugins and registered marketplaces, run these in your terminal:
+
+```sh
+claude plugin list
+claude plugin marketplace list
+```
+
+To browse available plugins, open `/plugin` inside Claude Code and choose Discover. Your installed list and the available marketplace catalog serve different purposes.
+
+To manage one package, use its qualified name and intended scope:
+
+```sh
+claude plugin update feature-dev@claude-plugins-official
+claude plugin disable feature-dev@claude-plugins-official --scope local
+claude plugin enable feature-dev@claude-plugins-official --scope local
+claude plugin uninstall feature-dev@claude-plugins-official --scope local
+```
+
+The [plugin commands reference](https://code.claude.com/docs/en/plugins/cli-reference) explains scope defaults and flags. See the FAQ for updating a whole marketplace's installed plugins.
+
+## Troubleshooting GitHub plugin auth and setup
+
+First identify which connection failed: **downloading a marketplace from GitHub**, **connecting the GitHub MCP service**, or **running a command that uses GitHub CLI**. Their credentials and failure messages can differ.
+
+1. For a marketplace clone error, confirm the `owner/repo` exists and you can access it. `git ls-remote <repository-url>` checks Git access; a private repository requires non-interactive authentication. GitHub CLI users can configure Git with `gh auth login` followed by `gh auth setup-git`. See the [official authentication troubleshooting steps](https://code.claude.com/docs/en/plugins/troubleshooting#ssh-authentication-failed-or-https-authentication-failed).
+2. For the listed [GitHub plugin](#github), inspect `/mcp` inside Claude Code. Its checked wrapper expects the `GITHUB_PERSONAL_ACCESS_TOKEN` environment variable; a successful marketplace download does not configure this server. Follow [GitHub MCP authentication](https://github.com/github/github-mcp-server#remote-github-mcp-server) for your host and account.
+3. For Code Review or Commit Commands, check `gh auth status` in the terminal and the repository access the command requires. If a newly installed plugin is missing, inspect the Errors tab of `/plugin`, check the marketplace name and run `/reload-plugins`. [Plugin troubleshooting](https://code.claude.com/docs/en/plugins/troubleshooting).
+
+Keep credential values out of issue reports. Share the command, error text with secrets removed, Claude Code version, and whether the failure is in cloning, loading or connecting a server.
 
 ## Build, plan and refine code
 
@@ -154,7 +226,7 @@ claude plugin install security-guidance@claude-plugins-official --scope local
 
 Latest repository commit: **2026-10-27**.
 
-### [Semgrep Guardian](https://github.com/semgrep/mcp-marketplace/tree/b58f407c6ac0f5fe47dee8301602f2e290a8ecfb/plugin)
+### [Semgrep Guardian](https://github.com/semgrep/guardian/tree/b58f407c6ac0f5fe47dee8301602f2e290a8ecfb/plugin)
 
 **Use it when:** you want Semgrep findings on code the agent writes, with tools for investigating and fixing them.
 
@@ -498,8 +570,109 @@ For a service connection, check the account, permissions and test/live environme
 
 Check for duplicate MCP connections and overlapping workflow instructions before adding another plugin. Inspect `/context` after setup to see what is using the window. Third-party marketplaces normally require you to enable automatic updates or update manually; review updates that change permissions or background behavior. [Plugin security and trust](https://code.claude.com/docs/en/plugins/security).
 
-This list includes plugin bundles with their own manifests and checked installation routes. It is an editorial selection by developer job, not a ranking by stars or claimed speed. Repository activity was checked on the date above. The maintainer reviews source links and installation routes monthly and after reported changes; [contribute a correction](CONTRIBUTING.md) when an upstream package changes.
+This list includes plugin bundles with their own manifests and checked installation routes. Entries are selected by developer job; stars are shown as repository metadata. The nightly refresh checks stars, latest repository commit and archived status. Manual source and installation-route reviews are separate, performed monthly and after reported changes; [contribute a correction](CONTRIBUTING.md) when an upstream package changes.
 
 The [MIT license](LICENSE) covers this list's original text. Each linked plugin has its own license and service terms; source-available packages are identified where relevant. No affiliate links or paid placements.
 
 Maintained by [Gabe Bouslov](https://gabebouslov.com). Star the repository to find it again, or propose a concrete improvement through an issue or pull request.
+
+## Alternatives
+
+For a single reusable workflow, a standalone skill can be sufficient; the forthcoming [Best Claude Code Skills](https://github.com/gbouslov/best-claude-code-skills) list compares collections by task. For tools or live data alone, configure an [MCP server](https://code.claude.com/docs/en/mcp). For repository conventions, [Claude Code's memory and instructions](https://code.claude.com/docs/en/memory) can hold the shared guidance.
+
+If your comparison is Claude Code plugins versus GitHub Copilot, [Copilot on GitHub](https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github) offers repository chat, coding tasks and pull-request review. Choose the host that fits where you work, then check which extensions it supports; a Claude Code plugin package is not automatically a Copilot extension.
+
+For a larger awesome-list, browse [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code). For community experience, the [Reddit plugins-and-skills discussion](https://www.reddit.com/r/ClaudeCode/comments/1shlte1/what_are_your_favourite_pluginsskills_for_claude/) can suggest things to investigate; check each suggestion's current primary source before installing.
+
+## About the nightly activity check
+
+Stars and commit dates belong to the source repository. Multiple plugins in Anthropic's shared repository therefore show the same metadata; a repository commit can concern a different plugin. The manual manifest review date near the top of this page describes a different check.
+
+<!-- freshness:start -->
+
+## Repository activity
+
+Repository metadata checked **2026-10-28 (UTC)**. Stars, latest default-branch commit and archive status describe each source repository, including shared repositories; they do not measure an individual plugin or skill release. Selection and installation guidance are reviewed separately.
+
+| Selected resource | Repository stars | Latest repository commit (UTC) | Archived |
+|---|---:|---|---|
+| [Feature Dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Superpowers](https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 307,316 | [2026-10-21](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | No |
+| [Planning with Files](https://github.com/OthmanAdi/planning-with-files) | 27,738 | [2026-10-28](https://github.com/OthmanAdi/planning-with-files/commit/5d29800bf8b919ca9a88ee7885b90050b5cb64ed) | No |
+| [Code Simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Agent SDK Dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/agent-sdk-dev) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Ralph Loop](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Code Review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [PR Review Toolkit](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/pr-review-toolkit) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Security Guidance](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Semgrep Guardian](https://github.com/semgrep/guardian/tree/b58f407c6ac0f5fe47dee8301602f2e290a8ecfb/plugin) | 19 | [2026-10-22](https://github.com/semgrep/guardian/commit/653bd65347baf7f9fcfbf4f5376dee12599eb61b) | No |
+| [Context7](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/context7) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Serena](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/serena) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [GitHub](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/github) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [GitLab](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/gitlab) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Commit Commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Linear](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/linear) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Atlassian](https://github.com/atlassian/atlassian-mcp-server/tree/b74220d41142fae52b4f680c805b2ab81050991a) | 1,129 | [2026-10-07](https://github.com/atlassian/atlassian-mcp-server/commit/b74220d41142fae52b4f680c805b2ab81050991a) | No |
+| [Sentry](https://github.com/getsentry/plugin-claude/tree/73e53541d7af21672e27428c7067f4264b8a3d65) | 4 | [2026-10-22](https://github.com/getsentry/plugin-claude/commit/1b082a07d1a8149cf8a50596dd609fd1edf8f7df) | No |
+| [Supabase](https://github.com/supabase-community/supabase-plugin/tree/2c6d02d4565babe784103ee4d446a93ae9b24151) | 38 | [2026-10-16](https://github.com/supabase-community/supabase-plugin/commit/016bf5b36670f7ad189ca90223513bd10406392d) | No |
+| [Firebase](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/firebase) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Stripe](https://github.com/stripe/ai/tree/deae744bc0cbf6034b4b6f22f51c690b71a4e779/providers/claude/plugin) | 1,982 | [2026-10-28](https://github.com/stripe/ai/commit/a835511362c071dc8d9d8b866f0f487f6cfd74dd) | No |
+| [Vercel](https://github.com/vercel/vercel-plugin/tree/882e66c2698689324c341b7bb8fd8beb92c27bf6) | 318 | [2026-10-26](https://github.com/vercel/vercel-plugin/commit/f7152cc00519bb3c549e072e1382e07ee027f90b) | No |
+| [Figma](https://github.com/figma/mcp-server-guide/tree/f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5) | 2,126 | [2026-10-28](https://github.com/figma/mcp-server-guide/commit/f3f264d9cbae059d9b96289ee33ce444b5c8e7e6) | No |
+| [Context Mode](https://github.com/mksglu/context-mode) | 32,683 | [2026-10-28](https://github.com/mksglu/context-mode/commit/0f8ba1010411bc6b1c6b1147b4ef0c5c5e2bc694) | No |
+| [Claude-Mem](https://github.com/thedotmack/claude-mem/tree/main/plugin) | 103,991 | [2026-10-28](https://github.com/thedotmack/claude-mem/commit/a510735ca80ec75bdfe4e13e1f13e1f6f0fe9a19) | No |
+| [Claude HUD](https://github.com/jarrodwatts/claude-hud) | 28,980 | [2026-10-26](https://github.com/jarrodwatts/claude-hud/commit/cf95a322afd18db045175d28962650ae7392ed77) | No |
+| [Explanatory Output Style](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/explanatory-output-style) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Learning Output Style](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/learning-output-style) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Claude Code Setup](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [CLAUDE.md Management](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Hookify](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/hookify) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Plugin Dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+| [Skill Creator](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator) | 45,102 | [2026-10-27](https://github.com/anthropics/claude-plugins-official/commit/f8c5e7a1dcb71b10cb74586224b5401f3de5db28) | No |
+
+<!-- freshness:end -->
+
+## Frequently asked questions
+
+### What are Claude Code plugins?
+
+Plugins package reusable components such as skills, agents, hooks and MCP connections for installation together. The [component overview](https://code.claude.com/docs/en/plugins/overview) explains what each part adds; individual entries above identify the parts in that package.
+
+### What is the difference between skills and plugins in Claude Code?
+
+A skill teaches a reusable task through `SKILL.md`; a plugin distributes a setup that can include that skill and other components. Choose a standalone skill when you need the instructions alone, or a plugin when you want the surrounding agents, hooks or connections. See [plugins and skills, compared](#plugins-and-skills-compared).
+
+### What are the best Claude Code plugins?
+
+Start with your next job: Feature Dev for exploring and building a feature, Context7 for library documentation, and Playwright for a running web journey. Choose Figma for a source design or Sentry for production-error context; the [one-minute table](#choose-a-plugin-in-one-minute) compares the setup each adds.
+
+### How to install Claude Code plugins?
+
+Use `claude plugin install <plugin>@<marketplace> --scope local` in a terminal after registering the marketplace. Each entry above gives its specific command and prerequisites; `/reload-plugins` inside Claude Code loads a newly installed package into an existing session. [Install and manage](#install-and-manage).
+
+### How to install Claude Code plugins from GitHub?
+
+Register the publisher's marketplace with `claude plugin marketplace add owner/repo`, then install the plugin using that marketplace's registered name. A repository containing a skill alone is a different package type; use its upstream skill installation guide. [Marketplace setup](https://code.claude.com/docs/en/plugin-marketplaces).
+
+### How to list Claude Code plugins?
+
+Run `claude plugin list` in the terminal for installed plugins, or open `/plugin` inside Claude Code. Use its Discover view for available plugins and `claude plugin marketplace list` for registered catalogs. [Command reference](https://code.claude.com/docs/en/plugins/cli-reference).
+
+### Are Claude Code plugins free?
+
+The entries link to publicly accessible packages, each with its own license. Model usage, connected services and compute can cost money; check the entry's setup notes and upstream terms before choosing a package.
+
+### How to update all Claude Code plugins?
+
+Open `/plugin`, select a marketplace in Marketplaces, and choose Update marketplace to refresh that catalog and its installed plugins; some source types still need individual updates. The shell command `claude plugin marketplace update` refreshes listings, while `claude plugin update <plugin>@<marketplace>` updates a selected package. [Update behavior and exceptions](https://code.claude.com/docs/en/discover-plugins#update-plugins-now).
+
+### How to uninstall Claude Code plugins?
+
+Run `claude plugin uninstall <plugin>@<marketplace> --scope local` for a local installation, or choose the corresponding scope in `/plugin`. Use `disable` when you want to stop a plugin while keeping it installed. [Command reference](https://code.claude.com/docs/en/plugins/cli-reference).
+
+### Are Claude Code plugins safe?
+
+Review the package and its access before enabling it: hooks can execute commands, and servers can reach data and services with your permissions. Inspect the specific components, runtimes and accounts listed above and follow [Anthropic's security and trust guide](https://code.claude.com/docs/en/plugins/security); repository popularity is one signal about adoption, not a security assessment.
+
+Read this directory on [GitHub Pages](https://gbouslov.github.io/best-claude-code-plugins/) or [GitHub](https://github.com/gbouslov/best-claude-code-plugins). Star it to keep the comparison handy.

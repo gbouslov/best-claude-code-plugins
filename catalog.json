@@ -1,0 +1,212 @@
+{
+  "repo": "gbouslov/best-claude-code-plugins",
+  "title": "Best Claude Code Plugins (2026): Choose by the Job",
+  "publication_status": "published",
+  "entries": [
+    {
+      "id": "feature-dev",
+      "name": "Feature Dev",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "url": "https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "repo": "obra/superpowers"
+    },
+    {
+      "id": "planning-with-files",
+      "name": "Planning with Files",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "repo": "OthmanAdi/planning-with-files"
+    },
+    {
+      "id": "code-simplifier",
+      "name": "Code Simplifier",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "agent-sdk-dev",
+      "name": "Agent SDK Dev",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/agent-sdk-dev",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "ralph-loop",
+      "name": "Ralph Loop",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "code-review",
+      "name": "Code Review",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "pr-review-toolkit",
+      "name": "PR Review Toolkit",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/pr-review-toolkit",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "security-guidance",
+      "name": "Security Guidance",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "semgrep-guardian",
+      "name": "Semgrep Guardian",
+      "url": "https://github.com/semgrep/guardian/tree/b58f407c6ac0f5fe47dee8301602f2e290a8ecfb/plugin",
+      "repo": "semgrep/guardian"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/context7",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/serena",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/gitlab",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "commit-commands",
+      "name": "Commit Commands",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/linear",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "url": "https://github.com/atlassian/atlassian-mcp-server/tree/b74220d41142fae52b4f680c805b2ab81050991a",
+      "repo": "atlassian/atlassian-mcp-server"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "url": "https://github.com/getsentry/plugin-claude/tree/73e53541d7af21672e27428c7067f4264b8a3d65",
+      "repo": "getsentry/plugin-claude"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "url": "https://github.com/supabase-community/supabase-plugin/tree/2c6d02d4565babe784103ee4d446a93ae9b24151",
+      "repo": "supabase-community/supabase-plugin"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/firebase",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "url": "https://github.com/stripe/ai/tree/deae744bc0cbf6034b4b6f22f51c690b71a4e779/providers/claude/plugin",
+      "repo": "stripe/ai"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://github.com/vercel/vercel-plugin/tree/882e66c2698689324c341b7bb8fd8beb92c27bf6",
+      "repo": "vercel/vercel-plugin"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "url": "https://github.com/figma/mcp-server-guide/tree/f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5",
+      "repo": "figma/mcp-server-guide"
+    },
+    {
+      "id": "context-mode",
+      "name": "Context Mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "repo": "mksglu/context-mode"
+    },
+    {
+      "id": "claude-mem",
+      "name": "Claude-Mem",
+      "url": "https://github.com/thedotmack/claude-mem/tree/main/plugin",
+      "repo": "thedotmack/claude-mem"
+    },
+    {
+      "id": "claude-hud",
+      "name": "Claude HUD",
+      "url": "https://github.com/jarrodwatts/claude-hud",
+      "repo": "jarrodwatts/claude-hud"
+    },
+    {
+      "id": "explanatory-output-style",
+      "name": "Explanatory Output Style",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/explanatory-output-style",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "learning-output-style",
+      "name": "Learning Output Style",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/learning-output-style",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "claude-code-setup",
+      "name": "Claude Code Setup",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "claude-md-management",
+      "name": "CLAUDE.md Management",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "hookify",
+      "name": "Hookify",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/hookify",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "plugin-dev",
+      "name": "Plugin Dev",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    {
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator",
+      "repo": "anthropics/claude-plugins-official"
+    }
+  ],
+  "selection_format": "linked-h3"
+}

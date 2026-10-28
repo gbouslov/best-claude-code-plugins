@@ -2,6 +2,8 @@
 
 Suggest an addition or correction through an issue or pull request. Describe the developer job it helps with and how it differs from an entry already listed.
 
+When adding or removing a selected entry, update both `README.md` and `catalog.json`. Their selected URLs must agree so the nightly table and Pages ItemList cover exactly the visible selection. Run `python3 -B scripts/test_refresh.py` to check the update rules.
+
 For an addition, include:
 
 1. The primary repository, its plugin manifest and the exact marketplace entry used to install it.
@@ -16,4 +18,12 @@ Keep descriptions factual and brief. Link to upstream code and documentation rat
 
 For a correction, identify the affected entry and link the upstream change. Do not include credentials, private project records, personal data or session contents.
 
-The maintainer reviews links, installation routes and repository activity monthly and after reported upstream changes. The checked date changes only after those checks. Contributions to the list's original text use its MIT license; linked plugins retain their own terms.
+Repository stars, latest commit and archived status refresh nightly. The maintainer reviews source content and installation routes monthly and after reported upstream changes. Automated metadata dates and manual review dates are distinct. Contributions to the list's original text use its MIT license; linked plugins retain their own terms.
+
+## Featured in this list
+
+If your project is listed, you may add this optional badge to your README. It links readers to the comparison and does not imply endorsement by your project or a security certification.
+
+```markdown
+[![Featured in Best Claude Code Plugins](https://img.shields.io/badge/Featured%20in-Best%20Claude%20Code%20Plugins-blue)](https://github.com/gbouslov/best-claude-code-plugins)
+```

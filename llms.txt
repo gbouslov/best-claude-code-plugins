@@ -2,12 +2,14 @@
 
 > A job-based comparison of 34 Claude Code plugins, with package contents, installation routes, setup requirements and dated repository activity.
 
-Start with the developer task in the README's selection table. The directory distinguishes workflow skills and agents, hooks, local MCP processes and hosted service connections. It also compares overlapping plugins and gives minimal combinations for common development tasks.
+An awesome Claude Code plugins list for web development, frontend and website design, mobile app development, developers and reducing token usage. Start with the developer task in the README's selection table. Compare official and community marketplaces, plugins versus skills, installation and management, GitHub authentication troubleshooting and alternatives. Ten visible FAQ answers and a nightly repository-activity table accompany the 34 selected plugins.
 
 ## Contents
 
 - [Full plugin directory and comparisons](README.md): pick a plugin, understand its setup and follow the checked installation route.
 - [Contributions](CONTRIBUTING.md): suggest an addition or correction using primary sources.
 - [License](LICENSE): MIT for the original directory text; linked plugins retain their own terms.
+- [Pages directory](https://gbouslov.github.io/best-claude-code-plugins/): the same README with ItemList data matching the visible selected entries.
+- [Best Claude Code Skills](https://github.com/gbouslov/best-claude-code-skills): forthcoming companion list for task-specific skills.
 
 Maintained by [Gabe Bouslov](https://gabebouslov.com). Sources checked 28 October 2026.
