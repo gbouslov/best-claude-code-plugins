@@ -1,8 +1,8 @@
 # Best Claude Code Plugins
 
-> A job-based comparison of 34 Claude Code plugins, with package contents, installation routes, setup requirements and dated repository activity.
+> A job-based comparison of 35 Claude Code plugins, with package contents, installation routes, setup requirements and dated repository activity.
 
-An awesome Claude Code plugins list for web development, frontend and website design, mobile app development, developers and reducing token usage. Start with the developer task in the README's selection table. Compare official and community marketplaces, plugins versus skills, installation and management, GitHub authentication troubleshooting and alternatives. Ten visible FAQ answers and a nightly repository-activity table accompany the 34 selected plugins.
+An awesome Claude Code plugins list for web development, frontend and website design, mobile app development, developers and reducing token usage. Start with the developer task in the README's selection table. Compare official and community marketplaces, plugins versus skills, installation and management, GitHub authentication troubleshooting and alternatives. Ten visible FAQ answers and a nightly repository-activity table accompany the 35 selected plugins.
 
 ## Contents
 
