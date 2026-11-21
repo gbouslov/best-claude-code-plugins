@@ -82,6 +82,12 @@
       "repo": "anthropics/claude-plugins-official"
     },
     {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl-claude-plugin/tree/3e1fb0c319d71b067906b8b602208dded3932cdb",
+      "repo": "firecrawl/firecrawl-claude-plugin"
+    },
+    {
       "id": "github",
       "name": "GitHub",
       "url": "https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/github",
