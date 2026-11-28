@@ -1,6 +1,6 @@
 # Best Claude Code Plugins (2026): Choose by the Job
 
-An awesome Claude Code plugins list and directory of 34 selected packages for building features, reviewing code, testing in a browser, connecting services and keeping context across sessions. Compare what each plugin installs, the setup it needs and its source repository's latest commit before adding it to your project.
+An awesome Claude Code plugins list and directory of 35 selected packages for building features, reviewing code, testing in a browser, connecting services and keeping context across sessions. Compare what each plugin installs, the setup it needs and its source repository's latest commit before adding it to your project.
 
 **Start with your next task.** For a new feature, choose Feature Dev; for current library documentation, Context7; for browser checks, Playwright. Add a service plugin when the task needs that service. You do not need the whole list.
 
@@ -59,7 +59,7 @@ Start by checking the cost of your current setup. Run `claude plugin details <na
 
 ## Official and community marketplaces
 
-Anthropic's [official marketplace](https://github.com/anthropics/claude-plugins-official) is the install source for 30 entries here, including external publishers distributed through that catalog. An official listing identifies the distribution channel; upstream ownership and licenses still differ. Anthropic also maintains a [community marketplace](https://github.com/anthropics/claude-code), distinct from its official catalog. See [Anthropic's marketplace guide](https://code.claude.com/docs/en/plugins/anthropic-marketplaces).
+Anthropic's [official marketplace](https://github.com/anthropics/claude-plugins-official) is the install source for 31 entries here, including external publishers distributed through that catalog. An official listing identifies the distribution channel; upstream ownership and licenses still differ. Anthropic also maintains a [community marketplace](https://github.com/anthropics/claude-code), distinct from its official catalog. See [Anthropic's marketplace guide](https://code.claude.com/docs/en/plugins/anthropic-marketplaces).
 
 Four entries here use their own community marketplaces: [Planning with Files](https://github.com/OthmanAdi/planning-with-files), [Context Mode](https://github.com/mksglu/context-mode), [Claude-Mem](https://github.com/thedotmack/claude-mem) and [Claude HUD](https://github.com/jarrodwatts/claude-hud). Each entry includes the registration and installation commands. For broader discovery, [Awesome Claude Plugins](https://github.com/Chat2AnyLLM/awesome-claude-plugins) catalogs marketplaces; this page selects individual developer plugins.
 
@@ -275,6 +275,18 @@ claude plugin install playwright@claude-plugins-official --scope local
 ```
 
 Latest repository commit: **2026-10-27** (plugin wrapper repository).
+
+### [Firecrawl](https://github.com/firecrawl/firecrawl-claude-plugin/tree/3e1fb0c319d71b067906b8b602208dded3932cdb)
+
+**Use it when:** an answer depends on current web pages, library documentation or scientific papers that are not in your repository.
+
+**Adds:** three skills for web search and page reading, developer documentation and scientific papers, plus a hosted Firecrawl MCP connection. **Setup:** a Firecrawl account, connected through `/mcp` with a browser sign-in; see [Firecrawl's MCP sign-in guide](https://docs.firecrawl.dev/mcp-server/oauth?utm_source=best-claude-code-plugins&utm_medium=integration). Searches and page reads use account credits and send your queries and URLs to Firecrawl. For library documentation it overlaps with the first entry in this section; pick one for those lookups. Firecrawl's own marketplace carries a later release with more skills; install from one source only.
+
+```sh
+claude plugin install firecrawl@claude-plugins-official --scope local
+```
+
+Marketplace bundle: **2.0.0**. Latest repository commit: **2026-11-06**.
 
 ## Connect your development services
 
